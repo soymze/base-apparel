@@ -4,24 +4,26 @@ import logo from '../images/logo.svg';
 
 const LeftSide = () => {
   return (
-    <div className="leftSide">
-      <div className="logoAndText">
-        <img src={logo} alt="Logo" className="logo" />
-        <h1 className="title">We're coming soon</h1>
-        <p className="description">
+    <div className="d-flex flex-column justify-content-center h-100 p-3">
+      <div className="mb-4">
+        <img src={logo} alt="Logo" className="img-fluid mb-3" />
+        <h1 className="display-4">We're coming soon</h1>
+        <p className="lead">
           Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
       </div>
-      <form className="form">
-        <label htmlFor="email" className="label">Email Address</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Enter your email"
-          required
-          className="input"
-        />
-        <button type="submit" className="button">Subscribe</button>
+      <form>
+        <div className="mb-3">
+          <label htmlFor="email" className="form-label">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+            className="form-control"
+          />
+        </div>
+        <button type="submit" className="btn btn-primary">Subscribe</button>
       </form>
     </div>
   );

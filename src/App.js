@@ -1,14 +1,21 @@
+import React from 'react';
 import LeftSide from './components/LeftSide';
 import RightSide from './components/RightSide';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
-function App() {
+const App = () => {
   return (
-    <div className="container">
-      <LeftSide />
-      <RightSide />
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-6">
+          <LeftSide />
+        </div>
+        <div className="col-6">
+          <RightSide />
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
