@@ -1,10 +1,12 @@
+import LeftSide from './components/LeftSide';
+import RightSide from './components/RightSide';
 import './App.css';
-import Card from './components/Card';
 
 function App() {
   return (
-    <div className="App">
-      <Card />
+    <div className="container">
+      <LeftSide />
+      <RightSide />
     </div>
   );
 }
