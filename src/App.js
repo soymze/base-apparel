@@ -5,12 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-6">
-          <LeftSide />
+    <div className="container-fluid p-0">
+      <div className="row no-gutters">
+        <div className="col-7 d-flex flex-column justify-content-center">
+          <LeftSide/>
         </div>
-        <div className="col-6">
+        <div className="col-5 p-0">
           <RightSide />
         </div>
       </div>
