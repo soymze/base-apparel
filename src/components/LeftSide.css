@@ -1,28 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 
+.logo-container{
+    margin-top: -5rem;
+}
 
 .content-ml{
     margin-left: 15rem;
 }
 
 .display-1{
-    margin-top: 5rem;
-    margin-right: 30rem;
-    letter-spacing: 1.5rem;
+    margin-top: 8rem;
+    margin-right: 40rem;
+    letter-spacing: 2rem;
     text-transform: uppercase;
 }
 
 p{
-    color: hsl(0, 36%, 70%);
-    margin-right: 25rem;
+    margin-right: 20rem;
+    line-height: 2rem;
 }
 
 .input-width{
     max-width:30rem;
+    height: 3rem;
+    text-indent: 1rem;
 }
 
-button{
+.btn-bg{
     right: 22rem;
     top: 0;
     height: 100%;
     width: 6rem;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
 }
+
+.text-pink{
+    color: hsl(0, 36%, 70%);
+}
+
+.fw-100{
+    font-weight: 100!important;
+}
+
+h1.fw-700 {
+    font-weight: 700;
+}
+
+p.fw-400{
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.input-width::placeholder {
+    color: hsla(0, 36%, 70%, 0.5)!important;
+    opacity: 1;
+  }
